@@ -16,9 +16,12 @@
           </a>
         {{ end }}
       {{ else }}
+      <div class="flex">
+        <img src="{{ "images/logo.png" | relURL }}" />
         <a class="inline-flex items-center py-4 text-xl font-medium" href="{{ .Site.Home.RelPermalink }}">
           {{ .Site.Title }}
         </a>
+      </div>
       {{ end }}
 
 
